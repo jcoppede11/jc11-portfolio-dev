@@ -1,0 +1,29 @@
+interface ExperienceData {
+    job: string;
+    title: string;
+    date: string;
+    jobType: string;
+}
+
+const experienceData: Array<ExperienceData> = [
+    {
+        job: 'Desarrollador de Software',
+        title: 'Edelar S.A.U · Jornada completa',
+        date: 'Julio 2023 · Actualidad',
+        jobType: 'La Rioja, Argentina - Presencial',
+    },
+    {
+        job: 'Desarrollador de Software Freelance',
+        title: 'Proyecto Freelance · Plataforma E-Learning',
+        date: 'Diciembre 2024 · Actualidad',
+        jobType: 'La Rioja, Argentina - En remoto / Híbrido',
+    },
+    {
+        job: 'Analista en Implementación de Software',
+        title: 'Educabot · Jornada completa',
+        date: 'Abril 2022 - Marzo 2023 · 1 año',
+        jobType: 'Buenos Aires, Argentina - En remoto',
+    },
+];
+
+export default experienceData;

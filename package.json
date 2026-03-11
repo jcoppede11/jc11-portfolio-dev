@@ -1,7 +1,8 @@
 {
   "name": "portfolio-dev",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "packageManager": "pnpm@10.30.3",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -9,9 +10,11 @@
     "typecheck": "tsc --noEmit",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clean": "rm -rf dist && rm -rf .astro && rm -rf node_modules"
   },
-  "dependencies": {    
+  "dependencies": {
+    "@astrojs/check": "^0.9.6",
     "@astrojs/react": "^4.4.2",
     "@astrojs/sitemap": "^3.7.0",
     "@fontsource-variable/onest": "^5.2.11",
@@ -20,9 +23,12 @@
     "lucide-react": "^0.575.0",
     "npm-check-updates": "^19.5.0",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "sharp": "^0.34.2"
   },
   "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^8.56.1",
     "@typescript-eslint/parser": "^8.56.1",
     "astro": "^5.17.1",
